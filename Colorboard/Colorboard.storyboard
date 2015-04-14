@@ -14,7 +14,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="SlA-9q-r04" kind="relationship" relationship="rootViewController" id="gRr-fH-YY8"/>
+                        <segue destination="SlA-9q-r04" kind="relationship" relationship="rootViewController" id="un1-Gc-ZWM"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SLI-W4-OSN" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -46,7 +46,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="cVr-Dx-wf9" kind="push" id="Rbe-aU-oph"/>
+                                            <segue destination="cVr-Dx-wf9" kind="show" id="Xgs-aT-l1Q"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="Fhj-Ha-2fs" style="IBUITableViewCellStyleDefault" id="6qj-Sd-K9B">
@@ -63,7 +63,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="fjB-D3-dmj" kind="push" id="2vb-rz-WxS"/>
+                                            <segue destination="fjB-D3-dmj" kind="show" id="zW4-z2-lzy"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -77,7 +77,7 @@
                     <navigationItem key="navigationItem" title="Colors" id="hia-nl-LaF">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="RZd-ui-sV0">
                             <connections>
-                                <segue destination="V4t-kd-6mk" kind="modal" id="YCn-bt-ERI"/>
+                                <segue destination="V4t-kd-6mk" kind="presentation" id="mYV-bh-v9R"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
