@@ -20,6 +20,13 @@
 
 @implementation MCColorViewController
 
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+    // set initial background color to gray 
+    self.view.backgroundColor = [UIColor grayColor];
+}
+
 - (IBAction)dismiss:(id)sender {
 
     [self.presentingViewController dismissViewControllerAnimated:YES
