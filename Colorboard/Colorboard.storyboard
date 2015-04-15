@@ -24,7 +24,7 @@
         <!--Colors-->
         <scene sceneID="lWj-kS-avd">
             <objects>
-                <tableViewController id="SlA-9q-r04" sceneMemberID="viewController">
+                <tableViewController id="SlA-9q-r04" customClass="MCPaletteViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="CBS-jW-Y2o">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -44,7 +44,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="gwn-Pa-w85" kind="show" identifier="ExistingColor" id="NUM-fj-6X1"/>
+                                    <segue destination="gwn-Pa-w85" kind="push" identifier="ExistingColor" id="NUM-fj-6X1"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -57,7 +57,7 @@
                     <navigationItem key="navigationItem" title="Colors" id="hia-nl-LaF">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="RZd-ui-sV0">
                             <connections>
-                                <segue destination="V4t-kd-6mk" kind="presentation" identifier="NewColor" id="mYV-bh-v9R"/>
+                                <segue destination="V4t-kd-6mk" kind="modal" identifier="NewColor" id="mYV-bh-v9R"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
