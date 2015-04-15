@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9545FF811ADDC9FA00AEC96D /* MCPaletteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9545FF801ADDC9FA00AEC96D /* MCPaletteViewController.m */; };
+		9545FF841ADDCB5C00AEC96D /* MCColorDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = 9545FF831ADDCB5C00AEC96D /* MCColorDescription.m */; };
+		9545FF861ADDCCDF00AEC96D /* Colorboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9545FF851ADDCCDF00AEC96D /* Colorboard.storyboard */; };
 		9567D7C41ADD7E2E00DF7968 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9567D7C31ADD7E2E00DF7968 /* main.m */; };
 		9567D7C71ADD7E2E00DF7968 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9567D7C61ADD7E2E00DF7968 /* AppDelegate.m */; };
 		9567D7CF1ADD7E2E00DF7968 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9567D7CE1ADD7E2E00DF7968 /* Images.xcassets */; };
 		9567D7DE1ADD7E2E00DF7968 /* ColorboardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9567D7DD1ADD7E2E00DF7968 /* ColorboardTests.m */; };
-		9567D7E81ADD7E9900DF7968 /* Colorboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9567D7E71ADD7E9900DF7968 /* Colorboard.storyboard */; };
 		9567D7EB1ADD87CF00DF7968 /* MCColorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9567D7EA1ADD87CF00DF7968 /* MCColorViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +28,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9545FF7F1ADDC9FA00AEC96D /* MCPaletteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCPaletteViewController.h; sourceTree = "<group>"; };
+		9545FF801ADDC9FA00AEC96D /* MCPaletteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCPaletteViewController.m; sourceTree = "<group>"; };
+		9545FF821ADDCB5C00AEC96D /* MCColorDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCColorDescription.h; sourceTree = "<group>"; };
+		9545FF831ADDCB5C00AEC96D /* MCColorDescription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCColorDescription.m; sourceTree = "<group>"; };
+		9545FF851ADDCCDF00AEC96D /* Colorboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Colorboard.storyboard; sourceTree = "<group>"; };
 		9567D7BE1ADD7E2E00DF7968 /* Colorboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Colorboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9567D7C21ADD7E2E00DF7968 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9567D7C31ADD7E2E00DF7968 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -35,7 +42,6 @@
 		9567D7D71ADD7E2E00DF7968 /* ColorboardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ColorboardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9567D7DC1ADD7E2E00DF7968 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9567D7DD1ADD7E2E00DF7968 /* ColorboardTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColorboardTests.m; sourceTree = "<group>"; };
-		9567D7E71ADD7E9900DF7968 /* Colorboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Colorboard.storyboard; sourceTree = "<group>"; };
 		9567D7E91ADD87CF00DF7968 /* MCColorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MCColorViewController.h; path = ../MCColorViewController.h; sourceTree = "<group>"; };
 		9567D7EA1ADD87CF00DF7968 /* MCColorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MCColorViewController.m; path = ../MCColorViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -83,7 +89,11 @@
 				9567D7C61ADD7E2E00DF7968 /* AppDelegate.m */,
 				9567D7E91ADD87CF00DF7968 /* MCColorViewController.h */,
 				9567D7EA1ADD87CF00DF7968 /* MCColorViewController.m */,
-				9567D7E71ADD7E9900DF7968 /* Colorboard.storyboard */,
+				9545FF7F1ADDC9FA00AEC96D /* MCPaletteViewController.h */,
+				9545FF801ADDC9FA00AEC96D /* MCPaletteViewController.m */,
+				9545FF821ADDCB5C00AEC96D /* MCColorDescription.h */,
+				9545FF831ADDCB5C00AEC96D /* MCColorDescription.m */,
+				9545FF851ADDCCDF00AEC96D /* Colorboard.storyboard */,
 				9567D7C11ADD7E2E00DF7968 /* Supporting Files */,
 			);
 			path = Colorboard;
@@ -197,7 +207,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9567D7CF1ADD7E2E00DF7968 /* Images.xcassets in Resources */,
-				9567D7E81ADD7E9900DF7968 /* Colorboard.storyboard in Resources */,
+				9545FF861ADDCCDF00AEC96D /* Colorboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,8 +225,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9545FF841ADDCB5C00AEC96D /* MCColorDescription.m in Sources */,
 				9567D7C71ADD7E2E00DF7968 /* AppDelegate.m in Sources */,
 				9567D7C41ADD7E2E00DF7968 /* main.m in Sources */,
+				9545FF811ADDC9FA00AEC96D /* MCPaletteViewController.m in Sources */,
 				9567D7EB1ADD87CF00DF7968 /* MCColorViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -393,6 +405,7 @@
 				9567D7E31ADD7E2E00DF7968 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9567D7E41ADD7E2E00DF7968 /* Build configuration list for PBXNativeTarget "ColorboardTests" */ = {
 			isa = XCConfigurationList;
@@ -401,6 +414,7 @@
 				9567D7E61ADD7E2E00DF7968 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

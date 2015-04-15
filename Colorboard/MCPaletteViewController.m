@@ -25,8 +25,36 @@
     [self.tableView reloadData];
 }
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
+    if ([segue.identifier isEqualToString:@"NewColor"]) {
+        
+        // If we are adding a new color, creat an instance
+        // and it to the colors array
+        MCColorDescription *color = [[MCColorDescription alloc] init];
+        [self.colors addObject:color];
+        
+        // then use the segue to set the color on the view controller
+        UINavigationController *nc = (UINavigationController *)segue.destinationViewController;
+        MCColorViewController *mvc = (MCColorViewController *)[nc topViewController];
+        mvc.colorDescription = color;
+    }
+    else if ([segue.identifier isEqualToString:@"ExistingColor"]) {
+        
+        // For the push seque, the sender is the UITableViewCell
+        NSIndexPath *ip = [self.tableView indexPathForCell:sender];
+        MCColorDescription *color = self.colors[ip.row];
+        
+        // Set the color, and also tell the view controller that this
+        // is an existing color
+        MCColorViewController *cvc = (MCColorViewController *)segue.destinationViewController;
+        cvc.colorDescription = color;
+        cvc.existingColor = YES;
+    }
+}
+
 - (NSInteger)tableView:(UITableView *)tableView
- numberOfRowsInSection:(NSInteger)section {
+         numberOfRowsInSection:(NSInteger)section {
     
     return [self.colors count];
 }

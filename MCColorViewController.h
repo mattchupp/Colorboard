@@ -9,6 +9,11 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
+@class MCColorDescription; 
+
 @interface MCColorViewController : UIViewController
+
+@property (nonatomic) BOOL existingColor;
+@property (nonatomic) MCColorDescription *colorDescription;
 
 @end

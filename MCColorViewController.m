@@ -7,6 +7,7 @@
 //
 
 #import "MCColorViewController.h"
+#import "MCColorDescription.h"
 
 @interface MCColorViewController ()
 
@@ -23,8 +24,39 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // set initial background color to gray 
-    self.view.backgroundColor = [UIColor grayColor];
+    UIColor *color = self.colorDescription.color;
+    
+    // Get the RGB values out of the UIColor object
+    float red, green, blue;
+    [color getRed:&red
+            green:&green
+             blue:&blue
+            alpha:nil];
+    
+    // Set the initial slider values
+    self.redSlider.value = red;
+    self.blueSlider.value = blue;
+    self.greenSlider.value = green;
+    
+    // Set the background color and text field value
+    self.view.backgroundColor = color;
+    self.textField.text = self.colorDescription.name;
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    // Remove the 'Done' button if this is an existing color
+    if (self.existingColor) {
+        self.navigationItem.rightBarButtonItem = nil;
+    }
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    
+    self.colorDescription.name = self.textField.text;
+    self.colorDescription.color = self.view.backgroundColor; 
 }
 
 - (IBAction)dismiss:(id)sender {
